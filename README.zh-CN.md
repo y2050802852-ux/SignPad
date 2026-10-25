@@ -59,6 +59,9 @@
 - 整窗 chrome 为 `NSVisualEffectView` `.underWindowBackground`——macOS 最强透底，桌面颜色直接透进来
 - 应用图标由 SignPad 自己的墨迹管线渲染：Catmull-Rom + 法线偏移丝带的白色飞白，加上边缘泛洪抠底的用户手绘印章——经典的「签名 + 盖章」构图
 
+### 🌐 双语界面
+- 界面语言中英双语，⌘, 设置可切换
+
 ## 🛠️ 实现方式
 
 | 层 | 选型 | 说明 |

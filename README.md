@@ -59,6 +59,9 @@ Sign on the trackpad → tune the ink → export PDF/SVG/PNG → keep a replayab
 - The whole window chrome is `NSVisualEffectView` with `.underWindowBackground` — the strongest see-through macOS offers; the desktop glows through
 - The app icon is rendered by SignPad's own ink pipeline: a Catmull-Rom + ribbon-outline white swoosh and the user's hand-drawn seal (border flood-fill keyed from a photo), the classic signature-plus-stamp composition
 
+### 🌐 Bilingual UI
+- Bilingual UI (Simplified Chinese / English), switch in Settings (⌘,)
+
 ---
 
 ## 🛠️ How It Works
