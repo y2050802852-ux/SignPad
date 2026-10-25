@@ -36,7 +36,7 @@ struct ContentView: View {
                 do {
                     _ = try SignatureStore.save(strokes: strokes, in: modelContext)
                 } catch {
-                    exportError = "保存历史失败：\(error.localizedDescription)"
+                    exportError = String(localized: "保存历史失败：\(error.localizedDescription)", locale: L10n.locale)
                 }
             }
         }
@@ -102,7 +102,7 @@ struct ContentView: View {
             HStack(spacing: 8) {
                 Image(systemName: "checkmark.circle.fill")
                     .foregroundStyle(.green)
-                Text("已导出 3 个文件到 ~/Desktop/签名/")
+                Text("已导出到 ~/Desktop/签名/")
                 Button("在 Finder 中显示") {
                     NSWorkspace.shared.activateFileViewerSelecting([urls[0]])
                 }

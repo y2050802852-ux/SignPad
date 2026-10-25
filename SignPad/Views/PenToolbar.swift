@@ -9,7 +9,8 @@ struct PenToolbar: View {
         HStack(spacing: 12) {
             Picker("笔刷", selection: $session.currentPen) {
                 ForEach(PenKind.allCases) { kind in
-                    Text(kind.rawValue).tag(kind)
+                    // rawValue 是持久化键，仅作本地化表的查找键，绝不落库英文
+                    Text(LocalizedStringKey(kind.rawValue)).tag(kind)
                 }
             }
             .pickerStyle(.segmented)
@@ -26,7 +27,7 @@ struct PenToolbar: View {
                             .frame(width: 24, height: 24)
                     }
                     .onTapGesture { session.currentColor = entry.color }
-                    .help(entry.name)
+                    .help(LocalizedStringKey(entry.name))
             }
 
             Slider(value: $session.widthScale, in: 0.5...3, step: 0.1)

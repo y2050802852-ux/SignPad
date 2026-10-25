@@ -11,10 +11,10 @@ enum VectorExporter {
 
         var errorDescription: String? {
             switch self {
-            case .emptyCanvas: return "画布为空，先完成一次签名再导出"
-            case .renderFailed: return "位图渲染失败，请重试"
-            case .invalidSVG(let reason): return "生成的 SVG 校验未通过：\(reason)"
-            case .cannotCreateDirectory(let error): return "无法创建导出文件夹：\(error.localizedDescription)"
+            case .emptyCanvas: return String(localized: "画布为空，先完成一次签名再导出", locale: L10n.locale)
+            case .renderFailed: return String(localized: "位图渲染失败，请重试", locale: L10n.locale)
+            case .invalidSVG(let reason): return String(localized: "生成的 SVG 校验未通过：\(reason)", locale: L10n.locale)
+            case .cannotCreateDirectory(let error): return String(localized: "无法创建导出文件夹：\(error.localizedDescription)", locale: L10n.locale)
             }
         }
     }
@@ -75,7 +75,8 @@ enum VectorExporter {
     private static func validateXML(_ string: String) throws {
         let parser = XMLParser(data: Data(string.utf8))
         guard parser.parse() else {
-            throw ExportError.invalidSVG(parser.parserError?.localizedDescription ?? "未知错误")
+            throw ExportError.invalidSVG(parser.parserError?.localizedDescription
+                                         ?? String(localized: "未知错误", locale: L10n.locale))
         }
     }
 }
