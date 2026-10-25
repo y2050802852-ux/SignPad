@@ -8,7 +8,7 @@
 
 在触控板上签名 → 调整笔迹 → 导出 PDF/SVG/PNG → 留下可回放的历史
 
-[![Download](https://img.shields.io/badge/⬇_下载-v1.0.0_DMG-blue?style=for-the-badge&logo=apple)](https://github.com/y2050802852-ux/SignPad/releases/latest)
+[![Download](https://img.shields.io/badge/⬇_下载-v1.1.0_DMG-blue?style=for-the-badge&logo=apple)](https://github.com/y2050802852-ux/SignPad/releases/latest)
 ![Platform](https://img.shields.io/badge/platform-macOS_15+-black?logo=apple)
 ![Swift](https://img.shields.io/badge/Swift-SwiftUI_+_SwiftData-orange?logo=swift)
 ![License](https://img.shields.io/badge/license-MIT-green)

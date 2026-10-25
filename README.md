@@ -8,7 +8,7 @@
 
 Sign on the trackpad → tune the ink → export PDF/SVG/PNG → keep a replayable history
 
-[![Download](https://img.shields.io/badge/⬇_Download-v1.0.0_DMG-blue?style=for-the-badge&logo=apple)](https://github.com/y2050802852-ux/SignPad/releases/latest)
+[![Download](https://img.shields.io/badge/⬇_Download-v1.1.0_DMG-blue?style=for-the-badge&logo=apple)](https://github.com/y2050802852-ux/SignPad/releases/latest)
 ![Platform](https://img.shields.io/badge/platform-macOS_15+-black?logo=apple)
 ![Swift](https://img.shields.io/badge/Swift-SwiftUI_+_SwiftData-orange?logo=swift)
 ![License](https://img.shields.io/badge/license-MIT-green)
